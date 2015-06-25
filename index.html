@@ -182,17 +182,19 @@
         
         	<form id="contact-form" class="contact-form" action="//formspree.io/karsumit94@live.com" method="POST">
 			    <input type="hidden" name="_next" value="//www.sumitkar.in/thanks.html" />
+				<input type="hidden" name="_subject" value="Contact Form" />
 				<input type="text" name="_gotcha" style="display:none" />
             	<p class="contact-name">
-            		<input id="contact_name" type="text" placeholder="Full Name" value="" name="name" />
+					<input type="text" name="name" placeholder="Full Name">
                 </p>
                 <p class="contact-email">
-                	<input id="contact_email" type="text" placeholder="Email Address" value="" name="email" />
+					<input type="email" name="_replyto" placeholder="Email Address">
                 </p>
                 <p class="contact-message">
                 	<textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="25"></textarea>
                 </p>
                 <p class="contact-submit">
+					 <input type="submit" value="Send">
                 	<a id="contact-submit" class="submit">Submit</a>
                 </p>
                 
