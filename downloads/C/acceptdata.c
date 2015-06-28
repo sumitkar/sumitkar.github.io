@@ -5,7 +5,7 @@ int main()
  char nam[20];
  int age;
  printf("Enter Your Name : ");
- scnaf("%s",&nam); 
+ scanf("%s",&nam); 
  printf("Enter Your Age : ");
  scanf("%d",&age);
  printf("\nYour Name is %s ",nam); 
