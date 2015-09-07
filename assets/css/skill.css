@@ -1,0 +1,66 @@
+.contentskill{
+    width:278px;
+    margin:0;
+    position:relative;
+    float:left;
+    font-size:12px;
+    line-height:2em;
+    padding:30px 0 30px;
+}
+.skillcol { width:280px; }
+
+#skill { 
+    list-style:none; 
+    padding-top:30px;
+}
+
+#skill li { 
+    margin-bottom:70px; 
+    background:#000; 
+    height:5px; 
+    border-radius:3px; 
+    border-left:1px solid #111; 
+    border-top:1px solid #111; 
+    border-right:1px solid #333; 
+    border-bottom:1px solid #333;  
+}
+
+#skill li em { 
+    position:relative; 
+    top:-30px;
+}
+
+.expand { 
+    height:1px; 
+    margin:2px 0; 
+    background:#2187e7; 
+    position:absolute;
+    box-shadow:0px 0px 10px 1px rgba(0,198,255,0.4);
+}
+
+.html5       { width:85%;  -moz-animation:html5 2s ease-out;       -webkit-animation:html5 2s ease-out;       }
+.css3        { width:90%;  -moz-animation:css3 2s ease-out;        -webkit-animation:css3 2s ease-out;        }
+.php      { width:73%;  -moz-animation:php 2s ease-out;      -webkit-animation:php 2s ease-out;      }
+.javascript   { width:75%;  -moz-animation:javascript 2s ease-out;   -webkit-animation:javascript 2s ease-out;   }
+.python { width:54%; -moz-animation:python 2s ease-out; -webkit-animation:python 2s ease-out; }
+.android { width:75%; -moz-animation:android 2s ease-out; -webkit-animation:android 2s ease-out; }
+.mysql { width:55%; -moz-animation:mysql 2s ease-out; -webkit-animation:mysql 2s ease-out; }
+.mongodb { width:40%; -moz-animation:mongodb 2s ease-out; -webkit-animation:mongodb 2s ease-out; }
+
+@-moz-keyframes html5       { 0%  { width:0px;} 100%{ width:85%;}  }
+@-moz-keyframes css3        { 0%  { width:0px;} 100%{ width:90%;}  }
+@-moz-keyframes php      { 0%  { width:0px;} 100%{ width:73%;}  }
+@-moz-keyframes javascript   { 0%  { width:0px;} 100%{ width:75%;}  }
+@-moz-keyframes python { 0%  { width:0px;} 100%{ width:54%;} }
+@-moz-keyframes android { 0%  { width:0px;} 100%{ width:75%;} }
+@-moz-keyframes mysql { 0%  { width:0px;} 100%{ width:55%;} }
+@-moz-keyframes mongodb { 0%  { width:0px;} 100%{ width:40%;} }
+
+@-webkit-keyframes html5       { 0%  { width:0px;} 100%{ width:85%;}  }
+@-webkit-keyframes css3        { 0%  { width:0px;} 100%{ width:90%;}  }
+@-webkit-keyframes php      { 0%  { width:0px;} 100%{ width:73%;}  }
+@-webkit-keyframes javascript   { 0%  { width:0px;} 100%{ width:75%;}  }
+@-webkit-keyframes python { 0%  { width:0px;} 100%{ width:54%;} }
+@-webkit-keyframes android { 0%  { width:0px;} 100%{ width:75%;} }
+@-webkit-keyframes mysql { 0%  { width:0px;} 100%{ width:55%;} }
+@-webkit-keyframes mongodb { 0%  { width:0px;} 100%{ width:40%;} }
