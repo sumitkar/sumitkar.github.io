@@ -1607,9 +1607,9 @@
 
 	header {
 		margin: 0 0 2em 0;
+                animation: type 4s steps(60, end);
 	}
-
-		header > p {
+        		header > p {
 			margin: 1em 0 0 0;
 		}
 

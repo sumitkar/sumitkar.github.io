@@ -5,7 +5,7 @@
     <title>Sumit Kar</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name='description' content='This is a Personal Website of Sumit Kar, Computer Science Engineer. Resume, portfolio and contact information.' />
+    <meta name='description' content='This is a personal website of Sumit Kar, Computer Science Engineer.<br> Here you will fine my resume, my projects, portfolio and contact information.' />
     <meta name='author' content='Sumit Kar' />
     <meta name="owner" content="Sumit Kar">
     <meta content='http://www.sumitkar.in/logo.png' property='og:image' />
@@ -21,6 +21,35 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/jquery.min.js"></script>
+    <script>
+        var text = "Hi ! I'm Sumit Kar";
+        var length = text.length;
+        var timeOut;
+        var character = 0;
+        
+
+        (function typeWriter() {
+            timeOut = setTimeout(function () {
+                character++;
+                var type = text.substring(0, character);
+                $('.head').text(type);
+                typeWriter();
+
+                if (character == length) {
+                    clearTimeout(timeOut);
+                    $('.detail').html("Computer Science Engineering Student");
+                    setTimeout(function () {
+                        $('.hobbies').html("Web Developer | Graphic Designer | Freelancer | Foodie | Dreamer | Traveller | Photographer | Nuismatic ");
+                    }, 20);
+                }
+
+            }, 230);
+        }());
+
+       
+    </script>
+   
+    
 </head>
 <body>
 
@@ -82,14 +111,17 @@
         <section id="top" class="one dark cover">
             <div class="container">
 
+                
                 <header>
-                    <h2 class="alt">
+                    <h3>&nbsp;</h3>
+                    <h2 class="alt head">
+                        <br/>
 
-                        <br />
-                        Hi! I'm <strong>Sumit Kar</strong>
                     </h2>
-                    <i> Computer Science Engineering Student</i><br /><br />
-                    <small> Web Developer | Graphic Designer | Freelancer | Foodie | Dreamer | Traveller | Photographer | Nuismatic </small>
+                        
+                    
+                    <i class="detail smooth">&nbsp;</i><br /><br />
+                    <small class="hobbies smooth">&nbsp;</small>
                     <br /><br /><br /><br />
                 </header>
 
@@ -280,6 +312,10 @@
     <script src="assets/js/util.js"></script>
     <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
     <script src="assets/js/main.js"></script>
+    
+   
+
+
     <!-- Wow Animation -->
     <script type="text/javascript" src="assets/js/wow.min.js"></script>
     <script>
