@@ -31,6 +31,18 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/custom.js"></script> 
+    <script>
+        $(function () {
+            $(".meter > span").each(function () {
+                $(this)
+					.data("origWidth", $(this).width())
+					.width(0)
+					.animate({
+					    width: $(this).data("origWidth")
+					}, 1200);
+            });
+        });
+    </script>
     <!-- Analytics -->
     <script>
         (function (i, s, o, g, r, a, m) {
@@ -81,14 +93,7 @@
     
 </head>
 <body class="noselect">
-    <!-- This section is for Splash Screen -->
-    <div class="ole">
-        <section id="jSplash">
-            <div id="circle"></div>
-        </section>
-    </div>
-    <!-- End of Splash Screen -->
-
+    
     <!-- Header -->
     <div id="header">
 
@@ -193,7 +198,9 @@
                     I can say I’m quite good at
                 </header>
                 <!-- Start Profile -->
-                <div class="span4 profile">
+                <div class="meter orange nostripes">
+                    <span style="width: 33.3%">HTML5</span>
+                <!--</div>
                     <div class="contentskill">
                         <div class="skillcol">                    
                             <ul id="skill">
@@ -208,8 +215,8 @@
 
                             </ul>
                         </div>
-                    </div>
-                </div>
+                    </div>-->
+                
                 <!-- End Profile -->
                 
             </div>
@@ -374,7 +381,7 @@
             $("img").h5lightbox();
         });
     </script>
-
+   
 
     <!-- Wow Animation -->
     <script type="text/javascript" src="assets/js/wow.min.js"></script>
