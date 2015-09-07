@@ -15,12 +15,14 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
     <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <link rel="stylesheet" href="assets/css/jquery.h5-lightbox.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/custom.css">
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/custom.js"></script> 
+    
     <script>
         var text = "Hi ! I'm Sumit Kar";
         var length = text.length;
@@ -82,7 +84,7 @@
                     <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">127.0.0.1</span></a></li>
                     <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">about(me)</span></a></li>
                     <li><a href="#skill" id="skill-link" class="skel-layers-ignoreHref"><span class="icon fa-terminal">Tech.Skills</span></a></li>
-                    <li><a href="#project" id="project-link" class="skel-layers-ignoreHref"><span class="icon fa-book">#include &lt;projects.h&gt;</span></a></li>
+                   <!-- <li><a href="#project" id="project-link" class="skel-layers-ignoreHref"><span class="icon fa-book">#include &lt;projects.h&gt;</span></a></li> -->
                     <li><a href="#myWorks" id="myWorks-link" class="skel-layers-ignoreHref"><span class="icon fa-th">myWorks()</span></a></li>
                     <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Get in Touch</span></a></li>
                 </ul>
@@ -159,7 +161,7 @@
                 
             </div>
         </section>
-        <!-- Projects -->
+        <!-- Projects 
         <section id="project" class="four">
             <div class="container">
 
@@ -167,68 +169,66 @@
                     <h2>#include &lt;projects.h&gt;</h2>
                 </header>
             </div>
-        </section>
+        </section> -->
 
         <!-- myWorks -->
-        <section id="myWorks" class="three">
+        <section id="myWorks" class="four">
             <div class="container">
 
                 <header>
                     <h2>myWorks()</h2>
                 </header>
-<!--
+          
+
                 <p>
-                    Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-                    egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-                    Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-                    fusce hendrerit lacus ridiculus.
+                    Here I have uploaded few projects done by me. 
                 </p>
 
                 <div class="row">
                     <div class="4u 12u$(mobile)">
                         <article class="item">
-                            <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+                            <a class="image fit"><img src="images/pic02.jpg" alt="" data-large-src="images/pic02.jpg" /></a>
                             <header>
                                 <h3>Ipsum Feugiat</h3>
                             </header>
                         </article>
                         <article class="item">
-                            <a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+                            <a class="image fit"><img src="images/pic02.jpg" alt="" data-large-src="images/pic02.jpg" /></a>
                             <header>
-                                <h3>Rhoncus Semper</h3>
+                                <h3>Ipsum Feugiat</h3>
                             </header>
                         </article>
                     </div>
                     <div class="4u 12u$(mobile)">
                         <article class="item">
-                            <a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+                            <a class="image fit"><img src="images/pic02.jpg" alt="" data-large-src="images/pic02.jpg" /></a>
                             <header>
-                                <h3>Magna Nullam</h3>
+                                <a href="#"><h3>ppp</h3></a> 
                             </header>
                         </article>
                         <article class="item">
-                            <a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+                            <a class="image fit"><img src="images/pic02.jpg" alt="" data-large-src="images/pic02.jpg" /></a>
                             <header>
-                                <h3>Natoque Vitae</h3>
+                                <h3>Ipsum Feugiat</h3>
                             </header>
                         </article>
                     </div>
                     <div class="4u$ 12u$(mobile)">
                         <article class="item">
-                            <a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+                            <a class="image fit"><img src="images/pic02.jpg" alt="" data-large-src="images/pic02.jpg" /></a>
                             <header>
-                                <h3>Dolor Penatibus</h3>
+                                <h3>Ipsum Feugiat</h3>
                             </header>
                         </article>
                         <article class="item">
-                            <a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+                            <a class="image fit"><img src="images/pic02.jpg" alt="" data-large-src="images/pic02.jpg" /></a>
                             <header>
-                                <h3>Orci Convallis</h3>
+                                <h3>Ipsum Feugiat</h3>
                             </header>
                         </article>
                     </div>
                 </div>
-    -->
+    
             </div>
         </section>
 
@@ -315,7 +315,12 @@
     <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
     <script src="assets/js/main.js"></script>
     
-   
+    <script src="assets/js/jquery.h5-lightbox.js"></script>
+    <script>
+        $(function () {
+            $("img").h5lightbox();
+        });
+    </script>
 
 
     <!-- Wow Animation -->
