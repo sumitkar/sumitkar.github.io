@@ -1,0 +1,393 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Sumit Kar</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Sumit Kar">
+    <meta name="google-site-verification" content="Qni-4XfMWhSEGt2IOOf8yoY0y-S6XEX9Iyuhd2BbXsk" />
+    <meta property="og:url" content="http://www.sumitkar.in">
+    <meta property="og:image" content="http://www.sumitkar.in/logo.png">
+    <meta name="keyword" content="Sumit Kar, Timus Rak, 9038901219, Technology,Kolkata, Computer Engineering, Comuter Teacher, B.Tech, engineering, calcutta, SVIST, Innovetion, Web Designer, Photographer">
+    <meta name='description' content='This is a personal website of Sumit Kar, Computer Science Engineer.<br> Here you will fine my resume, my projects, portfolio and contact information.' />
+    <meta name='author' content='Sumit Kar' />
+    <meta name="owner" content="Sumit Kar">
+    <meta content='Sumit Kar, Timus Rak, 9038901219, Technology,Kolkata, Computer Engineering, Comuter Teacher, B.Tech, engineering, calcutta, SVIST, Innovetion, Web Designer, Photographer, Swami Vivekananda Institute Of Science and Technology, Timus Rak, PicXel,9748555549' name='keyword' />
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" /> 
+    
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <link rel="stylesheet" href="assets/css/jquery.h5-lightbox.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/skill.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/noselect.css">
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/custom.js"></script> 
+    <script>
+        $(function () {
+            $(".meter > span").each(function () {
+                $(this)
+					.data("origWidth", $(this).width())
+					.width(0)
+					.animate({
+					    width: $(this).data("origWidth")
+					}, 1200);
+            });
+        });
+    </script>
+    <!-- Analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-64497724-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <!-- End Analytics -->
+    <script>
+        var text = "Hi ! I'm Sumit Kar";
+        var length = text.length;
+        var timeOut;
+        var character = 0;
+        
+
+        (function typeWriter() {
+            timeOut = setTimeout(function () {
+                character++;
+                var type = text.substring(0, character);
+                $('.head').text(type);
+                typeWriter();
+
+                if (character == length) {
+                    clearTimeout(timeOut);
+                    $('.detail').html("Computer Science Engineering Student");
+                    setTimeout(function () {
+                        $('.hobbies').html("Web Developer | Graphic Designer | Freelancer | Foodie | Dreamer | Traveller | Photographer | Nuismatic ");
+                    }, 20);
+                }
+
+            }, 230);
+        }());
+
+        $(document).ready(function () {
+            $(document).on("contextmenu", function () {
+                return false;
+            });
+        });
+       
+    </script>
+   
+    
+</head>
+<body class="noselect">
+    
+    <!-- Header -->
+    <div id="header">
+
+        <div class="top">
+
+            <!-- Logo -->
+            <div id="logo">
+                <span class="image avatar48"><img src="images/logo.png" alt="" /></span>
+                <h1 id="title">Sumit Kar</h1>
+                <p>Computer Science Engineer</p>
+            </div>
+
+            <!-- Nav -->
+            <nav id="nav">
+                <!--
+
+                    1. Hash link (scrolls to a different section within the page)
+
+                       <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+                    2. Standard link (sends the user to another page/site)
+
+                       <li><a href="http://sumitkar.in/abcd.html" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+                -->
+                <ul>
+                    <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">127.0.0.1</span></a></li>
+                    <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">about(me)</span></a></li>
+                    <li><a href="#skill" id="skill-link" class="skel-layers-ignoreHref"><span class="icon fa-terminal">Tech.Skills</span></a></li>
+                   <!-- <li><a href="#project" id="project-link" class="skel-layers-ignoreHref"><span class="icon fa-book">#include &lt;projects.h&gt;</span></a></li> -->
+                    <li><a href="#myWorks" id="myWorks-link" class="skel-layers-ignoreHref"><span class="icon fa-th">myWorks()</span></a></li>
+                    <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Get in Touch</span></a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="bottom">
+
+            <!-- Social Icons -->
+            <ul class="icons">
+                <li><a href="https://twitter.com/timusrak" target="_blank" class="icon fa-twitter wow fadeInLeft" data-wow-delay=".4s"><span class="label">Twitter</span></a></li>
+                <li><a href="https://www.facebook.com/sumitkarblogs" target="_blank" class="icon fa-facebook wow fadeInLeft" data-wow-delay=".4s"><span class="label">Facebook</span></a></li>
+                <li><a href="https://github.com/karsumit94/" target="_blank" class="icon fa-github wow fadeInLeft" data-wow-delay=" .6s"><span class="label">Github</span></a></li>
+                <li><a href="mailto:contact@sumitkar.in" target="_blank" class="icon fa-envelope wow fadeInLeft" data-wow-delay=".8s"><span class="label">Email</span></a></li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- Intro -->
+        <section id="top" class="one dark cover">
+            <div class="container">
+
+                
+                <header>
+                    <h3>&nbsp;</h3>
+                    <h2 class="alt head">
+                        <br/>
+
+                    </h2>
+                        
+                    
+                    <i class="detail smooth">&nbsp;</i><br /><br />
+                    <small class="hobbies smooth">&nbsp;</small>
+                    <br /><br /><br /><br />
+                </header>
+
+                <footer>
+                    <a href="#about" class="button scrolly"><i class="fa fa-chevron-down"></i></a>
+                </footer>
+
+            </div>
+        </section>
+        <!-- About Me -->
+        <section id="about" class="two">
+            <div class="container">
+
+                <header>
+                    <h2>about(me)</h2>
+                </header>
+                
+
+                <!--<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+-->
+                <p class="about-two">I'm Sumit Kar... I am practically a Tech Geek. Technology, Graphic Designing, Photography, Web Designing and Social Communication are my fields of Interest. I spend my day reading Technology Magazine, and play around with new Apps and Gadgets. I also love to capture images from day to day life and try to render them immortal. I love to Promote Kolkata, Bengal and the rich Bengali Culture to the whole world. I will be sharing the photos here. I like playing with Programming Codes and render new methods. I am always learning from things around me.</p>
+                <footer>
+                    <a href="include/Resume.pdf" class="button scrolly">Formal Resume</a>
+                </footer>
+            </div>
+        </section>
+        <!-- Skills -->
+        <section id="skill" class="three">
+            <div class="container">
+
+                <header>
+                    <h2>Tech.Skills</h2>
+                    I can say I’m quite good at
+                </header>
+                <!-- Start Profile -->
+                <div class="meter orange nostripes">
+                    <span style="width: 33.3%"></span>
+                <!--</div>
+                    <div class="contentskill">
+                        <div class="skillcol">                    
+                            <ul id="skill">
+                                <li><span class="expand python"></span><em>HTML 5</em></li>
+                                <li><span class="expand python"></span><em>CSS 3</em></li>
+                                <li><span class="expand python"></span><em>PHP</em></li>
+                                <li><span class="expand python"></span><em>C#</em></li>
+                                <li><span class="expand python"></span><em>Windows Phone</em></li>
+                                <li><span class="expand python"></span><em>C / C++</em></li>
+                                <li><span class="expand python"></span><em>Android</em></li>
+                                <li><span class="expand python"></span><em>MySQL</em></li>
+
+                            </ul>
+                        </div>
+                    </div>-->
+                
+                <!-- End Profile -->
+                
+            </div>
+        </section>
+        <!-- Projects 
+        <section id="project" class="four">
+            <div class="container">
+
+                <header>
+                    <h2>#include &lt;projects.h&gt;</h2>
+                </header>
+            </div>
+        </section> -->
+
+        <!-- myWorks -->
+        <section id="myWorks" class="four">
+            <div class="container">
+
+                <header>
+                    <h2>myWorks()</h2>
+                </header>
+          
+
+                <p>
+                    Here I have uploaded few projects done by me. 
+                </p>
+
+                <div class="row">
+                    <div class="4u 12u$(mobile)">
+                        <article class="item">
+                            <a class="image fit"><img src="images/pic02.jpg" alt="" data-large-src="images/pic02.jpg" /></a>
+                            <header>
+                                <h3>Ipsum Feugiat</h3>
+                            </header>
+                        </article>
+                        <article class="item">
+                            <a class="image fit"><img src="images/pic02.jpg" alt="" data-large-src="images/pic02.jpg" /></a>
+                            <header>
+                                <h3>Ipsum Feugiat</h3>
+                            </header>
+                        </article>
+                    </div>
+                    <div class="4u 12u$(mobile)">
+                        <article class="item">
+                            <a class="image fit"><img src="images/pic02.jpg" alt="" data-large-src="images/pic02.jpg" /></a>
+                            <header>
+                                <a href="#"><h3>ppp</h3></a> 
+                            </header>
+                        </article>
+                        <article class="item">
+                            <a class="image fit"><img src="images/pic02.jpg" alt="" data-large-src="images/pic02.jpg" /></a>
+                            <header>
+                                <h3>Ipsum Feugiat</h3>
+                            </header>
+                        </article>
+                    </div>
+                    <div class="4u$ 12u$(mobile)">
+                        <article class="item">
+                            <a class="image fit"><img src="images/pic02.jpg" alt="" data-large-src="images/pic02.jpg" /></a>
+                            <header>
+                                <h3>Ipsum Feugiat</h3>
+                            </header>
+                        </article>
+                        <article class="item">
+                            <a class="image fit"><img src="images/pic02.jpg" alt="" data-large-src="images/pic02.jpg" /></a>
+                            <header>
+                                <h3>Ipsum Feugiat</h3>
+                            </header>
+                        </article>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+
+
+
+        <!-- Contact -->
+        <section id="contact" class="two">
+            <div class="container">
+
+                <header>
+                    <h2>Get in Touch</h2>
+                </header>
+
+               
+                
+                <div class="row">
+                    <div class="6u 12u$(mobile)">
+                        <strong><i class="fa fa-envelope-o"></i></strong> contact[at]sumitkar[dot]in &nbsp;
+                    </div>
+                    <div class="6u$ 12u$(mobile)">
+                        <strong><i class="fa fa-phone"></i></strong> +91 9038901219
+                    </div>
+                    <div class="6u 12u$(mobile)" >
+                        <strong><i class="fa fa-map-marker"></i></strong> P - 30 C.I.T. Scheme 114-A,<br /> Lake Gardens Kolkata - 700045
+                    </div>
+                    <div class="6u$ 12u$(mobile)">
+                        I am currently accepting new client projects.<br /> Hire me !
+                    </div>   
+                    </div>
+                         
+                     
+                <p>
+                    
+                </p>
+                <form method="post" action="//formspree.io/karsumit94@live.com">
+                    <div class="row">
+                        <div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
+                        <div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
+                        <div class="12u$">
+                            <textarea name="message" placeholder="Message"></textarea>
+                        </div>
+                        <div class="12u$">
+                            <input type="hidden" name="_next" value="//sumitkar.in/thanks.html" />
+                            <input type="text" name="_gotcha" style="display:none" />
+                            <input type="submit" value="Send Message" />
+                        </div>
+                    </div>
+                </form>
+
+
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+
+        <!-- Copyright -->
+        <ul class="copyright">
+            <li>&copy; Sumit Kar. All rights reserved.</li>
+            
+        </ul>
+        <div class="bottom">
+
+            <!-- Social Icons -->
+            <ul class="icons">
+                <li><a href="https://twitter.com/timusrak" target="_blank" class="icon fa-twitter wow fadeInLeft" data-wow-delay=".4s"><span class="label">Twitter</span></a></li>
+                <li><a href="https://www.facebook.com/sumitkarblogs" target="_blank" class="icon fa-facebook wow fadeInLeft" data-wow-delay=".4s"><span class="label">Facebook</span></a></li>
+                <li><a href="https://github.com/karsumit94/" target="_blank" class="icon fa-github wow fadeInLeft" data-wow-delay=" .6s"><span class="label">Github</span></a></li>
+                <li><a href="mailto:contact@sumitkar.in" target="_blank" class="icon fa-envelope wow fadeInLeft" data-wow-delay=".8s"><span class="label">Email</span></a></li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollzer.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+    
+    <script src="assets/js/jquery.h5-lightbox.js"></script>
+    <script>
+        $(function () {
+            $("img").h5lightbox();
+        });
+    </script>
+   
+
+    <!-- Wow Animation -->
+    <script type="text/javascript" src="assets/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+</html>
