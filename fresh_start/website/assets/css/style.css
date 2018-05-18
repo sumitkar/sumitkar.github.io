@@ -1,0 +1,79 @@
+.preloader-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(238, 238, 238, 0.8);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;  
+    z-index: 1001;
+}
+.left-nav{
+    width: 240px;
+}
+.left-nav > li {
+    border-bottom: 1px solid #ddd;
+}
+#nav-profile > div {
+    width:100%;
+    min-width:100%;
+}
+#left-nav-header-line-1{
+    font-size:2rem;
+    font-weight:600;
+}
+#left-nav-header-line-2{
+    font-size:2rem;
+    font-weight:200;
+}
+#left-nav-header-line-3{
+    font-size:13px;
+}
+#left-nav-header-line-4{
+    font-size:13px;
+}
+#leftnav-trigger{
+    margin: 20px;
+    position: fixed;
+    z-index: 100;
+    background-color: rgba(187,222,251,0.5);
+}
+#leftnav-trigger > a{
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+.company-strong{
+    font-weight: bold!important;
+    padding-right: 2px;
+}
+.valign-profile{
+    padding: 20px;
+    line-height: 10px;
+}
+header, main, footer {
+    padding-left: 240px;
+}
+
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+        padding-left: 0;
+    }
+}
+/*********** CSS for scrollbar ***********/
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
