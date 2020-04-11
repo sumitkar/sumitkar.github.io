@@ -87,7 +87,7 @@ author_skill_strong:
             tech_logo: ubuntu.png
             visibility: true
           - tech_name: CentOS
-            tech_logo: centos_logo.png
+            tech_logo: centos_logo.jpg
             visibility: true
           - tech_name: Android
             tech_logo: android-logo.png

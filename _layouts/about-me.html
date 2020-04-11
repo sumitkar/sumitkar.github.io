@@ -68,28 +68,6 @@ layout: default
                 difference!</p>
 
         </div>
-        <div class="card desktop-only">
-            <h1 class="card-title">Recent Posts</h1>
-            <ul>
-                {% for post in site.posts limit:5 %}
-                <li>
-                    <a href="{{ post.url }}">{{ post.title }}</a>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
-    </div>
-    <div class="col-lg-7">
-        <div class="card">
-            <h1> Skills </h1>
-            <br />
-            {%- include author_skills.html -%}
-        </div>
-        <div class="card">
-            <h1 class="card-title"> Work Experience</h1>
-            <br />
-            {%- include author_experience.html -%}
-        </div>
         {% if site.show_author_education_details == true %}
         <div class="card">
             <h1 class="card-title"> Education </h1>
@@ -102,7 +80,7 @@ layout: default
                     <img src="{{site.url}}{{site.baseurl}}/assets/img/{{ detail.college_logo}}" class="company-logo" />
                 </div>
                 {% endif %}
-                <div class="col-md-8">
+                <div class="col-md-12">
                     <h4 class="experience-title"> {{detail.college_degree }}</h4>
                     <p class="experience-desc"> {{detail.description}} </p>
                     <p><a href="{{detail.college_url}}">{{ detail.college_name}}</a></p>
@@ -114,6 +92,30 @@ layout: default
             {% endfor %}
         </div>
         {% endif %}
+        <div class="card desktop-only">
+            <h1 class="card-title">Recent Posts</h1>
+            <ul>
+                {% for post in site.posts limit:5 %}
+                <li>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="col-lg-7">
+
+        <div class="card">
+            <h1 class="card-title"> Work Experience</h1>
+            <br />
+            {%- include author_experience.html -%}
+        </div>
+        <div class="card">
+            <h1> Skills </h1>
+            <br />
+            {%- include author_skills.html -%}
+        </div>
+
         <div class="card mobile-only">
             <h1 class="card-title">Recent Posts</h1>
             <ul>
