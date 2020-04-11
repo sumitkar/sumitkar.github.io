@@ -3,7 +3,7 @@ subtitle: Software Engineer at Cisco Systems (India)
 description: >- # this means to ignore newlines until "baseurl:"
   Software Engineer at Cisco
 
-url: "" # the base hostname & protocol for your site, e.g. https://example.github.io
+url: "https://www.sumitkar.in/" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
 
 urls:
@@ -34,6 +34,70 @@ author_education_details:
                 description: High School
                 visibility: true
 
+author_skill_strong:
+          - tech_name: Java
+            tech_logo: java.png
+            visibility: true
+          - tech_name: Apache Tomcat
+            tech_logo: tomcat.png
+            visibility: true
+          - tech_name: Docker
+            tech_logo: docker.png
+            visibility: true
+          - tech_name: SQL
+            tech_logo: sql.png
+            visibility: true
+          - tech_name: HTML5
+            tech_logo: html5-logo.png
+            visibility: true
+          - tech_name: CSS3
+            tech_logo: css3-logo.png
+            visibility: true
+          - tech_name: JavaScript
+            tech_logo: javascript-logo.png
+            visibility: true
+          - tech_name: jQuery
+            tech_logo: jquery-logo.png
+            visibility: true
+          - tech_name: Angular
+            tech_logo: angular.png
+            visibility: true
+          - tech_name: Bootstrap
+            tech_logo: bootstrap-logo.png
+            visibility: true
+          - tech_name: Wordpress
+            tech_logo: wordpress-logo.png
+            visibility: true
+          - tech_name: Drupal
+            tech_logo: drupal-logo.png
+            visibility: true
+          - tech_name: Photoshop
+            tech_logo: photoshop-logo.png
+            visibility: true
+          - tech_name: GIMP
+            tech_logo: gimp.png
+            visibility: true
+          - tech_name: Office Utilities
+            tech_logo: office-logo.png
+            visibility: true
+          - tech_name: Git
+            tech_logo: github-logo.png
+            visibility: true
+author_skill_basic:
+          - tech_name: Java
+            tech_logo: java.png
+            visibility: true
+          - tech_name: Apache Tomcat
+            tech_logo: tomcat.png
+            visibility: true
+          - tech_name: Java
+            tech_logo: java.png
+            visibility: true
+          - tech_name: Apache Tomcat
+            tech_logo: tomcat.png
+            visibility: true
+          
+
 
 
 # social links
@@ -62,29 +126,13 @@ google_analytics: UA-102170653-1
 show_author_work_experiences: true
 show_author_education_details: true
 show_author_project_details: true
-
+show_author_skill_strong: true 
+show_author_skill_basics: true 
 
 # pagination of posts
 paginate: 4
 per_page: 4
 paginate_path: "/blog/page/:num/"
-
-# minify
-# compress_html:
-#   clippings: all
-#   comments: ["<!-- ", " -->"]
-#   endings: all
-#   ignore:
-#     envs: ['development']
-
-# Archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#   layout: archive
-#   permalinks:
-#     category: '/category/:name/'
-
 
 # Gallery
 defaults:
@@ -108,14 +156,6 @@ plugins:
   - jekyll-menus
 
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
 exclude:
   - .sass-cache/
   - .jekyll-cache/

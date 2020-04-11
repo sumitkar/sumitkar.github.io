@@ -1,4 +1,4 @@
-<p><strong>Operating Systems</strong> Linux, Windows, Mac OS</p>
+<!-- <p><strong>Operating Systems</strong> Linux, Windows, Mac OS</p>
 <p><strong>Programming Languages</strong> Java, C, Angular, PHP, HTML, CSS, JavaScript Build Tools: Gradle, Maven</p>
 <p><strong>Database</strong> MySQL, CloudSQL, Reddis, MongoDB</p>
 <p><strong>Server</strong> Apache Tomcat, Nginx</p>
@@ -8,4 +8,46 @@
     Asana</p>
 <p><strong>Version Control</strong> Git, Subversion</p>
 <p><strong>Continuous Integration</strong> Jenkins</p>
-<p><strong>Other Utilities</strong> LDAP, ELK Stack, Office Utility, Photoshop, GIMP, Corel</p>
+<p><strong>Other Utilities</strong> LDAP, ELK Stack, Office Utility, Photoshop, GIMP, Corel</p> -->
+
+<div class="row">
+
+    <div class="col-lg-12">
+        <h4>Strong</h4>
+        </br>
+        <div class="row d-flex justify-content-center">
+            {% for detail in site.author_skill_strong %}
+            {% if detail.visibility == true %}
+            <div class="col-lg-3" style="text-align: center">
+                {% if detail.tech_logo %}
+                <img src="/assets/img/{{ detail.tech_logo}}" class="skills-img" />
+                {% endif %}
+                {% if detail.tech_name %}
+                <p class="padding-top-5">{{ detail.tech_name}}</p>
+                {% endif %}
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+        </br>
+        <!-- <h4>Basic</h4>
+        </br>
+        <div class="row d-flex justify-content-center">
+            {% for detail in site.author_skill_basic %}
+            {% if detail.visibility == true %}
+            <div class="col-lg-3 col-md-4 col-sm-6 " style="text-align: center">
+                {% if detail.tech_logo %}
+                <img src="/assets/img/{{ detail.tech_logo}}" class="skills-img" />
+                {% endif %}
+                {% if detail.tech_name %}
+                <p class="padding-top-5">{{ detail.tech_name}}</p>
+                {% endif %}
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+        </br> -->
+    </div>
+
+
+</div>

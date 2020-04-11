@@ -7,3 +7,14 @@ blockquote {
     background: whitesmoke;
     border: 1px solid;
 }
+.skills-img{
+    width: 85px;
+    height: 85px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px; background-color: #fff
+}
+.padding-top-5{
+    padding-top:5px !important;
+}
