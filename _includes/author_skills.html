@@ -15,7 +15,7 @@
 <div class="row justify-content-center">
     {% for detail in site.author_skill_strong %}
     {% if detail.visibility == true %}
-    <div class="col-md-3 col-4" style="text-align: center">
+    <div class="col-4" style="text-align: center">
         {% if detail.tech_logo %}
         <img src="/assets/img/{{ detail.tech_logo}}" class="skills-img" />
         {% endif %}
