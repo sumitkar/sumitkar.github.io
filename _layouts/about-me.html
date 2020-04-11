@@ -1,0 +1,130 @@
+---
+layout: default
+---
+
+<div class="row ">
+    <div class="col-lg-4 offset-md-1">
+        <div class="card" id="profile-card">
+            <a href="/">
+                <img src="/assets/img/{{ site.author_logo }}" class="profile-img">
+            </a>
+            <h1 class="profile-name"> {{ site.title }}</h1>
+            <p class="profile-bio"> {{ site.subtitle }}</p>
+            <p class="profile-links">
+                {% if site.twitter_username %}
+                <a class="social-link" href="http://twitter.com/{{ site.twitter_username }}">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                {% endif %}
+                {% if site.facebook_username %}
+                <a class="social-link" href="http://facebook.com/{{ site.facebook_username }}">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                {% endif %}
+                {% if site.instagram_username %}
+                <a class="social-link" href="http://instagram.com/{{ site.instagram_username }}">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                {% endif %}
+                {% if site.github_username %}
+                <a class="social-link" href="http://github.com/{{ site.github_username }}">
+                    <i class="fab fa-github"></i>
+                </a>
+                {% endif %}
+                {% if site.linkedin_username %}
+                <a class="social-link" href="http://linkedin.com/in/{{ site.linkedin_username }}">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                {% endif %}
+            </p>
+            <h6> <i class="fas fa-map-marker-alt"></i> India</h6>
+            <h6> <i class="fas fa-envelope"></i> karsumit94[at]live[dot]com</h6>
+            <h6> <i class="fas fa-link"></i> www.sumitkar.in</h6>
+        </div>
+        <div class="card">
+            <h1 class="card-title">About</h1>
+            <p>Hello, my name is Sumit Kar. I am a Computer engineer fascinated by the web and IoT based technologies. I
+                have deep
+                knowledge of the several web layers and the interaction between all of them. Capable of shipping
+                creative and
+                optimal solutions according to the requirements. I am a firm believer in Clean Code and Agile
+                methodologies.
+            </p>
+            <p>Other than coding I like, Graphic Designing, Photography and Communicating with people. I spend my day
+                reading
+                Technology Magazine and play around with new Apps and Gadgets. I also love to capture images from day to
+                day life
+                and try to render them immortal. I love to Promote Kolkata, Bengal and the rich Bengali culture to the
+                entire world.
+            </p>
+            <p>
+                My career began in Kolkata when I joined Novatree as an Intern Software developer. Then I got an
+                opportunity to work
+                with Broadsoft, and I moved to Chennai. Later the company got acquired by Cisco where I am presently
+                working. </p>
+            <p>
+                I like playing with Programming Codes. I am always learning from things around me. I want to make things
+                that make a
+                difference!</p>
+
+        </div>
+        <div class="card desktop-only">
+            <h1 class="card-title">Recent Posts</h1>
+            <ul>
+                {% for post in site.posts limit:5 %}
+                <li>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="col-lg-7">
+        <div class="card">
+            <h1> Skills </h1>
+            <br />
+            {%- include author_skills.html -%}
+        </div>
+        <div class="card">
+            <h1 class="card-title"> Work Experience</h1>
+            <br />
+            {%- include author_experience.html -%}
+        </div>
+        {% if site.show_author_education_details == true %}
+        <div class="card">
+            <h1 class="card-title"> Education </h1>
+            <br />
+            {% for detail in site.author_education_details %}
+            {% if detail.visibility == true %}
+            <div class="row">
+                {% if detail.college_logo %}
+                <div class="col-md-2">
+                    <img src="{{site.url}}{{site.baseurl}}/assets/img/{{ detail.college_logo}}" class="company-logo" />
+                </div>
+                {% endif %}
+                <div class="col-md-8">
+                    <h4 class="experience-title"> {{detail.college_degree }}</h4>
+                    <p class="experience-desc"> {{detail.description}} </p>
+                    <p><a href="{{detail.college_url}}">{{ detail.college_name}}</a></p>
+                </div>
+            </div>
+            <hr>
+            {% endif %}
+
+            {% endfor %}
+        </div>
+        {% endif %}
+        <div class="card mobile-only">
+            <h1 class="card-title">Recent Posts</h1>
+            <ul>
+                {% for post in site.posts limit:5 %}
+                <li>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,40 @@
+---
+layout: default-no-header-footer
+---
+<script>
+  $( document ).ready( function ()
+  {
+    var app = document.getElementById( 'typewriteText' );
+    var typewriter = new Typewriter( app, {
+      strings: true,
+      loop: true
+    } );
+    typewriter
+      .pauseFor( 1500 )
+      .typeString( 'Technology Enthusiast' )
+      .pauseFor( 500 )
+      .deleteAll()
+      .typeString( 'Photographer' )
+      .pauseFor( 500 )
+      .deleteAll()
+      .typeString( 'Foodie' )
+      .pauseFor( 500 )
+      .deleteAll()
+      .typeString( 'Numismatist' )
+      .start();
+    const element = document.querySelector( '#sumit-kar' );
+    element.classList.add( 'animated', 'fadeInDown' );
+  } );
+
+</script>
+<style>
+
+</style>
+<div class="col-lg-12">
+  <div class="" style="text-align: center;">
+    <h1 id="sumit-kar" class="display-4">Sumit Kar</h1>
+    <h3 class="lead" id="typewriteText"></h3>
+    </br>
+    <button class="btn btn-dark btn-lg"><a href="/about">Want to know more about me ?</a></button>
+  </div>
+</div>

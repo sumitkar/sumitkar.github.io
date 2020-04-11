@@ -1,0 +1,58 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en " }}">
+{%- include head.html -%}
+
+<body class="padding-top-0">
+    <div class="container-fluid h-100">
+        <div id="bg-particle" class="h-100 w-100"></div>
+        <div class="row h-100">
+            <div class="col-lg-12 customcenter">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+    <style>
+        #bg-particle {
+            position: fixed;
+        }
+
+        .customcenter {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .padding-top-0 {
+            padding-top: 0 !important;
+
+        }
+    </style>
+    <script>
+        var options = {
+            classname: 'my-class',
+            id: 'my-id'
+        };
+        var nanobar = new Nanobar( options );
+        nanobar.go( 30 );
+        nanobar.go( 76 );
+        nanobar.go( 100 );
+
+    </script>
+    <script src="//unpkg.com/jparticles@2.0.1/production/jparticles.js"></script>
+    <script src="//unpkg.com/jparticles@2.0.1/production/particle.js"></script>
+    <script>
+        new JParticles.particle( '#bg-particle', {
+            proximity: 90,
+            range: 100,
+            opacity: 0.9,
+            color: [ '#FFFFFF', '#9E9E9E', '#ffcc00', '#ff7601' ],
+            resize: true
+        } );
+    </script>
+    </div>
+</body>
+
+</html>

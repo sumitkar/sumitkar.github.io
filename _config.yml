@@ -1,0 +1,131 @@
+title: Sumit Kar
+subtitle: Software Engineer at Cisco Systems (India)
+description: >- # this means to ignore newlines until "baseurl:"
+  Software Engineer at Cisco
+
+url: "" # the base hostname & protocol for your site, e.g. https://example.github.io
+baseurl: "" # the subpath of your site, e.g. /blog
+
+urls:
+    - text: About Me
+      url: /about
+    - text: Blog
+      url: /blog
+    - text: PicXelography
+      url: /gallery
+    - text: Contact Me
+      url : /contact
+
+author_logo: sumit-kar.jpeg
+author: Sumit Kar
+author_bio: 
+
+author_education_details:
+              - college_logo: 
+                college_name: Swami Vivekananda Institute of Science and Technology
+                college_url: https://svist.org
+                college_degree: Computer Science Engineer
+                description: Bachelor of Technology
+                visibility: true
+              - college_logo: 
+                college_name: A. K. Ghosh Memorial School
+                college_url: http://akgms.edu.in
+                college_degree: Science
+                description: High School
+                visibility: true
+
+
+
+# social links
+twitter_username: TimusRak
+github_username:  karsumit94
+facebook_username: www.sumitkar.in  
+linkedin_username: timusrak
+instagram_username: sumitkar.in
+
+
+#for comments using disqus
+disqus_shortname: timusrak94
+
+# formspree (contact form)
+formspree_email: karsumit94@live.com
+
+# syntax highlighter
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# google analytics
+google_analytics: UA-46783401-10
+
+# Choose what to show ( can be true or false)
+show_author_work_experiences: true
+show_author_education_details: true
+show_author_project_details: true
+
+
+# pagination of posts
+paginate: 4
+per_page: 4
+paginate_path: "/blog/page/:num/"
+
+# minify
+# compress_html:
+#   clippings: all
+#   comments: ["<!-- ", " -->"]
+#   endings: all
+#   ignore:
+#     envs: ['development']
+
+# Archives
+# jekyll-archives:
+#   enabled:
+#     - categories
+#   layout: archive
+#   permalinks:
+#     category: '/category/:name/'
+
+
+# Gallery
+defaults:
+  -
+    scope:
+      path: "gallery"
+    values:
+      permalink: /:path/:basename:output_ext
+
+# Build settings
+
+# theme: timus
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-algolia
+  - jekyll-menus
+
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+destination: ./build
