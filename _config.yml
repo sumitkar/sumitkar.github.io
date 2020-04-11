@@ -83,19 +83,28 @@ author_skill_strong:
           - tech_name: Git
             tech_logo: github-logo.png
             visibility: true
-author_skill_basic:
-          - tech_name: Java
-            tech_logo: java.png
+          - tech_name: Ubuntu
+            tech_logo: ubuntu.png
             visibility: true
-          - tech_name: Apache Tomcat
-            tech_logo: tomcat.png
+          - tech_name: CentOS
+            tech_logo: centos_logo.png
             visibility: true
-          - tech_name: Java
-            tech_logo: java.png
+          - tech_name: Android
+            tech_logo: android-logo.png
             visibility: true
-          - tech_name: Apache Tomcat
-            tech_logo: tomcat.png
+          - tech_name: PHP
+            tech_logo: php-logo.png
             visibility: true
+          - tech_name: C / C++
+            tech_logo: cpp-logo.png
+            visibility: true
+          - tech_name: ELK
+            tech_logo: elk.png
+            visibility: true
+          - tech_name: Jenkins
+            tech_logo: jenkins.png
+            visibility: true
+          
           
 
 

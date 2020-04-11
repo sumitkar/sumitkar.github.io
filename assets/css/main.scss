@@ -225,8 +225,13 @@ header {
 }
 
 .company-logo {
-    width: 100px;
-    height: 100px;
+    width: 85px;
+    height: 85px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
 }
 
 .author-profile-img {
