@@ -11,8 +11,6 @@ urls:
       url: /about
     - text: Blog
       url: /blog
-    - text: PicXelography
-      url: /gallery
     - text: Contact Me
       url : /contact
 
