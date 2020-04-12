@@ -1,22 +1,23 @@
 <head>
   <meta charset="utf-8">
-  <title>{{ site.title }} - {{ site.subtitle }}</title>
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
   <meta http-equip="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{% if page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %}" />
   <meta name="keywords"
     content="{% if page.title %}{{ page.title }}, {{ site.title }}, {% for categ in page.categories %}{{ categ }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% else %}{{ site.title }}, {% for category in site.categories %}{% capture categories_slug %}{{ category | first }}{% endcapture %}{% for categ in categories_slug %}{{ categ }}{% endfor %}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endif %}" />
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
-  <meta content="{{ site.share.fb_appid }}" property="fb:app_id">
   <meta content="{{ site.title }}" property="og:site_name">
   {% if page.noindex %}
   <meta name="robots" content="noindex">
   {% endif %}
   {% if page.title %}
-  <meta content="{{ page.title }}" property="og:title">
+  <meta content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}" property="og:title">
+  <meta content="{{site.url}}{{site.baseurl}}/assets/img/posts/{{ post.thumbnail }}" property="og:image">
   <meta content="article" property="og:type">
   {% else %}
   <meta content="{{ site.title }}" property="og:title">
+  <meta content="/assets/img/{{ site.author_logo }}" property="og:image">
   <meta content="website" property="og:type">
   {% endif %}
 
