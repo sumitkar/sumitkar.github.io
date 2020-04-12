@@ -2,7 +2,7 @@
 layout: post
 title: Be Aware, but don't panic - Deal With Coronavirus
 author: Sumit Kar
-date: '2020-04-13 00:15:23 +0530'
+date: '2020-04-13 00:10:23 +0530'
 category: corona
 summary: We are going through a difficult situation and in a situation like this, we should keep ourselves calm. I am sharing a few things to keep yourself calm and not to be panic-driven. 
 thumbnail: covid-19.jpg
