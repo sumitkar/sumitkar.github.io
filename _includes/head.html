@@ -13,7 +13,7 @@
   {% endif %}
   {% if page.title %}
   <meta content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}" property="og:title">
-  <meta content="{{site.url}}{{site.baseurl}}/assets/img/posts/{{ page.thumbnail }}" property="og:image">
+  <meta content="/assets/img/posts/{{ page.thumbnail }}" property="og:image">
   <meta content="article" property="og:type">
   {% else %}
   <meta content="{{ site.title }}" property="og:title">
