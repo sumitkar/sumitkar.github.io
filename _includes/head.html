@@ -8,6 +8,7 @@
     content="{% if page.title %}{{ page.title }}, {{ site.title }}, {% for categ in page.categories %}{{ categ }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% else %}{{ site.title }}, {% for category in site.categories %}{% capture categories_slug %}{{ category | first }}{% endcapture %}{% for categ in categories_slug %}{{ categ }}{% endfor %}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endif %}" />
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
   <meta content="{{ site.title }}" property="og:site_name">
+  <meta property="fb:app_id" content="{{site.fb_app_id}}" />
   {% if page.noindex %}
   <meta name="robots" content="noindex">
   {% endif %}
@@ -129,7 +130,29 @@
 
     ga( 'create', '{{ site.google_analytics }}', 'auto' );
     ga( 'send', 'pageview' );
+    window.fbAsyncInit = function ()
+    {
+      FB.init( {
+        appId: '{{site.fb_app_id}}',
+        cookie: true,
+        xfbml: true,
+        version: 'v6.0'
+      } );
+
+      FB.AppEvents.logPageView();
+
+    };
+
+    ( function ( d, s, id )
+    {
+      var js, fjs = d.getElementsByTagName( s )[ 0 ];
+      if ( d.getElementById( id ) ) { return; }
+      js = d.createElement( s ); js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore( js, fjs );
+    }( document, 'script', 'facebook-jssdk' ) );
   </script>
+
   {% endif %}
 
 </head>
