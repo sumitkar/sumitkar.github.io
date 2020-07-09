@@ -178,9 +178,11 @@ Every playbook has 2 components
 
 
 **Run the below command** 
+
 `$ ansible-playbook <playbook-name>.yaml` 
 
-**To know whether the syntax of the playbook was correct we can use** 
+**To know whether the syntax of the playbook was correct we can use**
+
 `$ ansible-playbook --syntax-check <playbook-name>.yaml`
 
 
@@ -218,26 +220,32 @@ Basic Ansible vault command
 
 ### Create 
 Type the below command in the terminal to create the playbook 
+
 `$ ansible-vault create filename.yaml` 
 
 ### Edit 
 Type the below command in the terminal to edit the encrypted playbook 
+
 `$ ansible-vault edit filename.yaml` 
 
 ### View 
 Type the below command in the terminal to view the encrypted playbook 
+
 `$ ansible-vault view filename.yaml` 
 
 ### Rekey 
 Rekey is the command used to change the password 
+
 `$ ansible-vault rekey filename.yaml` 
 
 ### Encrypt 
 Type the below command in the terminal to encrypt the existing playbook 
+
 `$ ansible-vault view filename.yaml` 
 
 ### Decrypt 
-`Type the below command in the terminal to de-encrypt the existing playbook` 
+Type the below command in the terminal to de-encrypt the existing playbook
+
 `$ ansible-vault view filename.yaml` 
 
 ### Running the encrypted playbook 
