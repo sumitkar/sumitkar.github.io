@@ -124,6 +124,11 @@ formspree_email: karsumit94@live.com
 # syntax highlighter
 markdown: kramdown
 highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    default_lang: html
+    css_class   : 'syntax'
 permalink: pretty
 
 # google analytics
