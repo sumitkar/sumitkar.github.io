@@ -25,5 +25,7 @@ blockquote {
   width: 60%;
 }
 .highlight {
-  background: none !important;
+    background: #dcdcdc !important;
+    padding: 10px;
+    border-radius: 5px;
 }
