@@ -27,7 +27,7 @@ There are several configuration-management tools out there why we should go with
 Ansible needs 3 files:
 
 **hosts** [ Inventory file: This file can contain the list of servers. It can be a list of DNS name and IP. ]
-```
+{% highlight yaml %}
 [web]
 host1.example.com
 192.168.1.122
@@ -37,12 +37,12 @@ host3.example.com
 host4.example.com
 host5.example.com
 host6.example.com
-```
+{% endhighlight %}
 The following code can added to try this locally 
-```
+{% highlight yaml %}
 [all:vars]
 ansible_connection=local
-```
+{% endhighlight %}
 
 
 **ansible.cfg** [ Config file ]
@@ -52,7 +52,7 @@ Order of preference of confirguation file
 3. ~/.ansible.cfg (.ansible.cfg in your home directory) 
 4. /etc/ansible/ansible.cfg 
 
-```
+{% highlight yaml %}
 [defaults]
 inventory = hosts 
 remote_tmp      = ~/.ansible/tmp
@@ -73,10 +73,10 @@ interpreter_python = auto
 [persistent_connection]
 #connect_timeout = 30
 #command_timeout = 30
-```
+{% endhighlight %}
 
 **play-nginx.yml** [Play file]
-```
+{% highlight yaml %}
 ---
 - hosts: web
   become: yes
@@ -91,7 +91,7 @@ interpreter_python = auto
       service:
           name: nginx
           state: started
-```
+{% endhighlight %}
 
 
 
