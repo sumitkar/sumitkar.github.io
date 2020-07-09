@@ -22,11 +22,11 @@ blockquote {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  width: 100%;
 }
 @media (min-width: 768px) {
     .img-center {
-      width: 60%;
+      width: 65%;
     }
 }
 .highlight {
