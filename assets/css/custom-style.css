@@ -24,3 +24,6 @@ blockquote {
   margin-right: auto;
   width: 60%;
 }
+.highlight {
+  background: none !important;
+}
