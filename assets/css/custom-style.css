@@ -22,7 +22,12 @@ blockquote {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 90%;
+}
+@media (min-width: 768px) {
+    .img-center {
+      width: 60%;
+    }
 }
 .highlight {
     background: #dcdcdc !important;
