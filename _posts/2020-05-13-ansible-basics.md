@@ -1,5 +1,5 @@
 ---
-title: Ansible: Automating your deployments
+title: Automating your deployments using Ansible
 layout: post
 author: Sumit Kar
 date: '2020-05-13 21:03:23 +0530'
