@@ -83,7 +83,7 @@ header {
     padding: 0px !important;
 }
 .card {
-    margin: 20px !important;
+    margin: 5px !important;
     padding: 20px !important;
     background-color: var(--card-background-color) !important;
 }
@@ -167,6 +167,9 @@ header {
     #topNav{
         padding-left: 100px;
         padding-right: 100px;
+    }
+    .card {
+        margin: 20px !important;
     }
 }
 
