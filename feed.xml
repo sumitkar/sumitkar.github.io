@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://www.sumitkar.in/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.sumitkar.in/" rel="alternate" type="text/html" /><updated>2023-01-04T10:34:20+00:00</updated><id>https://www.sumitkar.in/feed.xml</id><title type="html">Sumit Kar</title><subtitle>'Technology Enthusiast | Photographer | Foodie | Numismatist'</subtitle><author><name>Sumit Kar</name></author><entry><title type="html">The reason why you should consider investing at a young age</title><link href="https://www.sumitkar.in/finance/2020/07/08/the-reason-why-you-should-consider-investing-at-a-young-age/" rel="alternate" type="text/html" title="The reason why you should consider investing at a young age" /><published>2020-07-08T14:42:12+00:00</published><updated>2020-07-08T14:42:12+00:00</updated><id>https://www.sumitkar.in/finance/2020/07/08/the-reason-why-you-should-consider-investing-at-a-young-age</id><content type="html" xml:base="https://www.sumitkar.in/finance/2020/07/08/the-reason-why-you-should-consider-investing-at-a-young-age/">&lt;p&gt;To start with let’s consider the life of Mr. Shyam (fictitious character) who is 25 years old. Shyam has graduated recently and joined a Multinational IT firm. Now he started his career with a package of 3.6 LPA (the usual salary to start with, in a service-based organization). So, he gets approximately ₹30,000 per month, without considering any deduction. Now he spends ₹12,000 on house rent, food, and transport. Another ₹8,000 on leisure, shopping, medical expenses, etc. Now, he has surplus ₹10,000 which is retained in a savings account.
+Now for simplicity let’s consider, that he gets a fixed hike of 7.5% every year and his expenses to rise by 5% year on year. Let us also consider Shyam plans to retire at the age of 50. So, at the time of retirement, he has a savings of ₹1.3Cr (refer to the chart).&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;img-center&quot; style=&quot;filter: invert(0.87);&quot; src=&quot;/assets/img/fin1.png&quot; alt=&quot;The reason why you should consider investing at a young age&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After 25 years of hard work, Shyam managed to accumulate ₹1.3Crs. Now after retirement, if he wants to maintain the same lifestyle and his expenses rise by the same 5%, with the fund he has, it will last only for the next 12 years. So he can survive independently till the age of 62.
+Now, let’s consider Shyam decides to invest that amount in different funds where he can earn a return of 10% compounded annually.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;img-center&quot; style=&quot;filter: invert(0.87);&quot; src=&quot;/assets/img/fin2.png&quot; alt=&quot;The reason why you should consider investing at a young age&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We can clearly see, that he can save three times more than he did earlier. This will definitely help him sustain his post-retirement life.
+Investing at an early age leads to a compounding of returns. Regular investments from a young age can reap a huge benefit at the time of retirement. The money will grow with time. And if it is not invested properly you might have a tendency of spending that amount. Also, this will eventually make you responsible while spending. This way, you can afford many things which others might not be able to afford at that age.
+You will be able to beat the inflation, fulfill your needs, marriage, children’s education, purchase of property, and plan your retirement vacation!&lt;/p&gt;</content><author><name>Sumit Kar</name></author><category term="finance" /><summary type="html">To start with let’s consider the life of Mr. Shyam (fictitious character) who is 25 years old. Shyam has graduated recently and joined a Multinational IT firm. Now he started his career with a package of 3.6 LPA (the usual salary to start with, in a service-based organization). So, he gets approximately ₹30,000 per month, without considering any deduction. Now he spends ₹12,000 on house rent, food, and transport. Another ₹8,000 on leisure, shopping, medical expenses, etc. Now, he has surplus ₹10,000 which is retained in a savings account. Now for simplicity let’s consider, that he gets a fixed hike of 7.5% every year and his expenses to rise by 5% year on year. Let us also consider Shyam plans to retire at the age of 50. So, at the time of retirement, he has a savings of ₹1.3Cr (refer to the chart).</summary></entry><entry><title type="html">Automating your deployments using Ansible</title><link href="https://www.sumitkar.in/tech/2020/05/13/ansible-basics/" rel="alternate" type="text/html" title="Automating your deployments using Ansible" /><published>2020-05-13T15:33:23+00:00</published><updated>2020-05-13T15:33:23+00:00</updated><id>https://www.sumitkar.in/tech/2020/05/13/ansible-basics</id><content type="html" xml:base="https://www.sumitkar.in/tech/2020/05/13/ansible-basics/">&lt;p&gt;Since the world is moving into the DevOps model, and the industry started focusing on automation, I thought of sharing something related to automation for deployment. 
+Server-side deployment can be automated using several tools. One of which is Ansible. Ansible is a management tool that helps to maintain the cluster of machines.&lt;/p&gt;
+
+&lt;p&gt;There are several configuration-management tools out there why we should go with Ansible. For that there are below reasons&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Idempotent- Ansible’s whole architecture is structured around the concept of idempotency. The core idea here is that you only do things if they are needed and that things are repeatable without side effects.&lt;/li&gt;
+  &lt;li&gt;Agentless - There is no software that needs to be installed on the client system. We can use ansible as long we can ssh&lt;/li&gt;
+  &lt;li&gt;Modules - we create the new module in the ansible and add it to the ansible&lt;/li&gt;
+  &lt;li&gt;Tiny Learning Curve- Ansible is quite easy to learn. It doesn’t require any extra knowledge. With basic Linux knowledge this can be learnt.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ansible needs 3 files:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;hosts&lt;/strong&gt; [ Inventory file: This file can contain the list of servers. It can be a list of DNS name and IP. ]&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;web&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;host1.example.com&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;192.168.1.122&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;host3.example.com&lt;/span&gt;
+
+&lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;db&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;host4.example.com&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;host5.example.com&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;host6.example.com&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The following code can added to try this locally&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;vars&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;ansible_connection=local&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;ansible.cfg&lt;/strong&gt; [ Config file ]
+Order of preference of confirguation file&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;File specified by the ANSIBLE_CONFIG environment variable&lt;/li&gt;
+  &lt;li&gt;./ansible.cfg (ansible.cfg in the current directory)&lt;/li&gt;
+  &lt;li&gt;~/.ansible.cfg (.ansible.cfg in your home directory)&lt;/li&gt;
+  &lt;li&gt;/etc/ansible/ansible.cfg&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;defaults&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;inventory = hosts&lt;/span&gt; 
+&lt;span class=&quot;s&quot;&gt;remote_tmp      = ~/.ansible/tmp&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;local_tmp       = ~/.ansible/tmp&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;remote_user = ubuntu&lt;/span&gt; 
+&lt;span class=&quot;s&quot;&gt;private_key_file = ansible.pem&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#vault_password_file = /path/to/vault_password_file&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#executable = /bin/sh&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#ask_pass        = False&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;host_key_checking = False&lt;/span&gt; 
+&lt;span class=&quot;s&quot;&gt;interpreter_python = auto&lt;/span&gt;
+&lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;privilege_escalation&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#become = False&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#become_method = sudo&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#become_ask_pass = False&lt;/span&gt;
+
+
+&lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;persistent_connection&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#connect_timeout = 30&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#command_timeout = 30&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;play-nginx.yml&lt;/strong&gt; [Play file]&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;hosts&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;web&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;become&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;yes&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;tasks&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ensure nginx is at the latest version&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;apt&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;name=nginx state=latest&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;copy the content of the web site&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;copy&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;index.html&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;dest&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/var/www/html/&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;start nginx&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;service&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+          &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;nginx&lt;/span&gt;
+          &lt;span class=&quot;na&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;started&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;ansible-ad-hoc-command&quot;&gt;Ansible Ad-hoc command&lt;/h3&gt;
+&lt;p&gt;The Ad-Hoc command is the one-liner ansible command that performs one task on the target host. It allows you to execute simple one-line task against one or group of hosts defined on the inventory file configuration.&lt;/p&gt;
+
+&lt;p&gt;adhoc command has the two parts 
+List of host that you want to run the module 
+ansible module to run&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;$ ansible all -m ping&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The first parameter all tells we are performing the task against the all host 
+The second parameter m tells we are going to use ping module&lt;/p&gt;
+
+&lt;p&gt;To Know the list of modules type the below command in the terminal&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;$ ansible-doc -l | more&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;To Find the detail of modules&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;$ ansible-doc &lt;span class=&quot;nt&quot;&gt;&amp;lt;module-name&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;performing-basic-task-using-ansible-command&quot;&gt;Performing basic task using ansible command&lt;/h2&gt;
+
+&lt;h3 id=&quot;installing-packages&quot;&gt;Installing packages&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Run the below command in the terminal and see the output&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;$ ansible testserver -m shell -a &quot;whoami&quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Run the below command in the terminal and see the output and compare with above one&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;$ ansible testserver -m shell -a &quot;whoami&quot; --become&lt;/code&gt; [ &lt;code class=&quot;language-html highlighter-rouge&quot;&gt;--become&lt;/code&gt; is a parameter used to become root user ]&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Type the below command in the terminal to install nginx&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;$ ansible testserver -m apt -a 'name=nginx state=latest' --become&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;starting the services : Run the below command in the terminal to start the service&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;$ ansible -m service -a &quot;name=nginx state=started enabled=yes&quot; testserver --become&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Run the below command in the terminal to see ths status of the ngnix&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;$ ansible testserver -m shell -a &quot;service nginx status&quot; --become&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Run the below command to stop the service&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;$ ansible -m service -a &quot;name=nginx state=stopped enabled=yes&quot; testserver --become&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;file-module&quot;&gt;File module&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Run the below command in the terminal to find the existence of the folder&lt;/strong&gt;
+&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;$ ansible -m file -a &quot;path=/usr/share/nginx/html state=directory&quot; testserver --become&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Copy module: Run the below command in the terminal to copy the file from host to node (Copy module take 2 parameter : Source and Destination)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;$ ansible -m copy -a &quot;src=a.txt dest=/usr/share/nginx/html/&quot; testserver --become&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;ansible-setup-module&quot;&gt;Ansible setup module&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;The setup module is used to gather the information about the host&lt;/strong&gt;&lt;br /&gt;
+&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;$ ansible testserver -m setup&lt;/code&gt; 
+&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;$ ansible testserver -m setup -a &quot;filter=*ipv4&quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;writing-your-first-playbook&quot;&gt;Writing your first playbook&lt;/h2&gt;
+
+&lt;p&gt;Playbooks are list of plays grouped together and plays is group of tasks and task call modules 
+Playbooks are generally written in the yaml format 
+Note : we can also write the playbook in the json format&lt;/p&gt;
+
+&lt;p&gt;To run the playbook we can simply use the ansible-playbook and followed by the playbook name&lt;/p&gt;
+
+&lt;p&gt;Every playbook has 2 components&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;hosts - list of host in which we want to run the task&lt;/li&gt;
+  &lt;li&gt;task - task need to be performed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Run the below command&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;$ ansible-playbook &lt;span class=&quot;nt&quot;&gt;&amp;lt;playbook-name&amp;gt;&lt;/span&gt;.yaml&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;To know whether the syntax of the playbook was correct we can use&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;$ ansible-playbook --syntax-check &lt;span class=&quot;nt&quot;&gt;&amp;lt;playbook-name&amp;gt;&lt;/span&gt;.yaml&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;ansible-roles&quot;&gt;Ansible Roles&lt;/h2&gt;
+&lt;p&gt;Roles in Ansible are next level abstraction of playbook 
+Roles are way to organize the playbook in the efficient manner so that we can use it later. 
+Type the below command to see the list of command of available using the ansible-galaxy&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;$ ansible-galaxy -h&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The syntax to create the role was&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;$ ansible-galaxy init &lt;span class=&quot;nt&quot;&gt;&amp;lt;role-name&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Files inside the Role&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Default - Data about the role / application default variable eg:port no&lt;/li&gt;
+  &lt;li&gt;files - put the static files&lt;/li&gt;
+  &lt;li&gt;Handlers - handler are kept here&lt;/li&gt;
+  &lt;li&gt;meta - Information about the role&lt;/li&gt;
+  &lt;li&gt;task - Task are kept here&lt;/li&gt;
+  &lt;li&gt;templates - Similar to files but they are dynaimic&lt;/li&gt;
+  &lt;li&gt;vars - Same as Default it has high prority&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;ansible-vault&quot;&gt;Ansible Vault&lt;/h2&gt;
+&lt;p&gt;Ansible vault to encrypt the playbook and store them safely 
+Basic Ansible vault command&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;create&lt;/li&gt;
+  &lt;li&gt;encrypt&lt;/li&gt;
+  &lt;li&gt;decrypt&lt;/li&gt;
+  &lt;li&gt;view&lt;/li&gt;
+  &lt;li&gt;rekey&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;create&quot;&gt;Create&lt;/h3&gt;
+&lt;p&gt;Type the below command in the terminal to create the playbook&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;$ ansible-vault create filename.yaml&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;edit&quot;&gt;Edit&lt;/h3&gt;
+&lt;p&gt;Type the below command in the terminal to edit the encrypted playbook&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;$ ansible-vault edit filename.yaml&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;view&quot;&gt;View&lt;/h3&gt;
+&lt;p&gt;Type the below command in the terminal to view the encrypted playbook&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;$ ansible-vault view filename.yaml&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;rekey&quot;&gt;Rekey&lt;/h3&gt;
+&lt;p&gt;Rekey is the command used to change the password&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;$ ansible-vault rekey filename.yaml&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;encrypt&quot;&gt;Encrypt&lt;/h3&gt;
+&lt;p&gt;Type the below command in the terminal to encrypt the existing playbook&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;$ ansible-vault view filename.yaml&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;decrypt&quot;&gt;Decrypt&lt;/h3&gt;
+&lt;p&gt;Type the below command in the terminal to de-encrypt the existing playbook&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;$ ansible-vault view filename.yaml&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;running-the-encrypted-playbook&quot;&gt;Running the encrypted playbook&lt;/h3&gt;
+&lt;p&gt;Type the below command in the terminal to run the encrypted playbook 
+&lt;code class=&quot;language-html highlighter-rouge&quot;&gt;$ ansible-playbook filename.yml --ask-vault-pass&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Ansible is a powerful tool and this can not only be used for automating deployment. 
+It is also used to harden Operating System and applying patch.&lt;/p&gt;
+
+&lt;p&gt;Try out basic ansible commands :  https://github.com/karsumit94/ansible-example&lt;/p&gt;</content><author><name>Sumit Kar</name></author><category term="tech" /><summary type="html">Since the world is moving into the DevOps model, and the industry started focusing on automation, I thought of sharing something related to automation for deployment. Server-side deployment can be automated using several tools. One of which is Ansible. Ansible is a management tool that helps to maintain the cluster of machines.</summary></entry><entry><title type="html">Be Aware, but don’t panic - Deal With Coronavirus</title><link href="https://www.sumitkar.in/corona/2020/04/12/deal-with-corona/" rel="alternate" type="text/html" title="Be Aware, but don't panic - Deal With Coronavirus" /><published>2020-04-12T18:40:23+00:00</published><updated>2020-04-12T18:40:23+00:00</updated><id>https://www.sumitkar.in/corona/2020/04/12/deal-with-corona</id><content type="html" xml:base="https://www.sumitkar.in/corona/2020/04/12/deal-with-corona/">&lt;p&gt;The COVID-19 or the coronavirus, is creating panic for a lot of people. Since it’s a new virus, no one has immunity against it, and there is no vaccine available in the market.&lt;/p&gt;
+
+&lt;p&gt;This is termed as “Novel” since scientists are not yet sure how it behaves. From whatever we know so far, it mostly spreads through droplets from the mouth and nose. So anyone affected can spread the virus while talking to a person next to him. The rate at which it spreads is much higher than normal cough and cold. The World Health Organization (WHO) marked the disease as a pandemic. The stock market across the globe has crashed. There are predictions for huge job losses. In India, the government has declared a lockdown from March 22. There are travel restrictions to India.&lt;/p&gt;
+
+&lt;p&gt;People are regularly monitoring the number of COVID-19 affected patients and the death toll. People are panic buying groceries and daily essentials.&lt;/p&gt;
+
+&lt;p&gt;There are instances where a particular section of people are being blamed for spreading the virus. But the disease doesn’t affect anyone seeing their caste, races, etc.&lt;/p&gt;
+
+&lt;p&gt;All these are creating fear among people. A lot of people are getting into depression getting stuck in their homes for such a long time.&lt;/p&gt;
+
+&lt;p&gt;This is a serious issue. People should be aware of the situation and should stay at home, and stop the spread of the virus.&lt;/p&gt;
+
+&lt;p&gt;Instead of taking a rational approach, people are getting influenced by one another and letting Social Media forwards dictate their behavior.&lt;/p&gt;
+
+&lt;p&gt;The government has taken a major step to lockdown the entire nation which is unprecedented in recent history. Schools are closed, sports events are canceled, vacations are canceled, marriages are getting canceled, family gatherings are rescheduled.&lt;/p&gt;
+
+&lt;p&gt;Though preventive actions have been taken to stop the spread, people are getting worried. This is completely new for us, nothing like this has happened in our lifetime.&lt;/p&gt;
+
+&lt;p&gt;Few good things about the situation:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Researchers have found that people who have got the BCG vaccine (a vaccine used as a precaution for Tuberculosis) are less prone to the Coronavirus disease. And in India, it is mandatory to have this vaccine just after birth.&lt;/li&gt;
+  &lt;li&gt;The chances of spreading the virus are less in warmer places than in colder places.&lt;/li&gt;
+  &lt;li&gt;Rapid test kits will be available pretty soon, which can help diagnose the disease pretty quickly.&lt;/li&gt;
+  &lt;li&gt;Among the people who got affected, a lot of them are recovering pretty fast.&lt;/li&gt;
+  &lt;li&gt;The climate has improved a lot, which in turn has saved more lives than what Coronavirus has taken in the past few months.&lt;/li&gt;
+  &lt;li&gt;And most importantly a lot of scientists and researchers are working hard to find a cure for this.&lt;/li&gt;
+  &lt;li&gt;We will get over this pretty soon and get back to normal life.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We are going through a difficult situation and in a situation like this, we should keep ourselves calm. I am sharing a few things to keep yourself calm and not to be panic-driven.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Keep yourself away from Social Media and the news-minute.&lt;/li&gt;
+  &lt;li&gt;Know the facts and figures. Don’t trust the Social Media forwards on this.&lt;/li&gt;
+  &lt;li&gt;Binge-watch movies and series, whenever you get time.&lt;/li&gt;
+  &lt;li&gt;Watch “Ramayan” and other old series that are getting telecasted in “Doordarshan” with your parents. This will remind them about the good old days when they grew up!&lt;/li&gt;
+  &lt;li&gt;Getting into a Video Call with your childhood friends group.&lt;/li&gt;
+  &lt;li&gt;Play some online games with your friends and families.&lt;/li&gt;
+  &lt;li&gt;It takes a few weeks to grow a new habit, why not use the home quarantine days to grow a new good habit. You can make it a habit to do what you always wanted to do.&lt;/li&gt;
+  &lt;li&gt;You can learn new things at this time and give a second chance to your hobbies.&lt;/li&gt;
+  &lt;li&gt;You should take the virus seriously and stay safe at home. But you should not panic.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Sumit Kar</name></author><category term="corona" /><summary type="html">The COVID-19 or the coronavirus, is creating panic for a lot of people. Since it’s a new virus, no one has immunity against it, and there is no vaccine available in the market.</summary></entry><entry><title type="html">COVID-19 a social stigma</title><link href="https://www.sumitkar.in/corona/2020/04/03/covid-19-a-social-stigma/" rel="alternate" type="text/html" title="COVID-19 a social stigma" /><published>2020-04-03T15:33:23+00:00</published><updated>2020-04-03T15:33:23+00:00</updated><id>https://www.sumitkar.in/corona/2020/04/03/covid-19-a-social-stigma</id><content type="html" xml:base="https://www.sumitkar.in/corona/2020/04/03/covid-19-a-social-stigma/">&lt;p&gt;“Light candles for 9 minutes at 9 PM on Sunday. This light will show that we are together in the battle against the virus,” the PM said today.&lt;/p&gt;
+
+&lt;p&gt;Unity. That’s what he talked about.
+Okay.
+Now, Let me share my story…&lt;/p&gt;
+
+&lt;p&gt;A few of my close friends already know about this. But for a larger audience let me reiterate this.&lt;/p&gt;
+
+&lt;p&gt;I returned from Chennai ( my work location ) to Kolkata on March 22.
+And yes I didn’t travel just like that. I stayed in a PG, where chances of getting infected were more than if I travel.&lt;/p&gt;
+
+&lt;p&gt;Since I traveled through the Airport, I had a very high chance of getting infected. So, I had kept myself in complete isolation. I didn’t meet anyone.&lt;/p&gt;
+
+&lt;p&gt;Today is day 13 of my isolation, and with God’s grace, I don’t have any of the symptoms so far.&lt;/p&gt;
+
+&lt;p&gt;Meanwhile, right after I returned, few of the neighbors came to know about me coming back and there was a rumor in the neighborhood, that I was infected with Coronavirus. From that day onwards no one in my locality has opened the windows of their houses, that face our house.&lt;/p&gt;
+
+&lt;p&gt;Few locals ( mostly from the nearby slums ) gathered near my house and demanded me to do the test, else they won’t let me stay in my house.&lt;/p&gt;
+
+&lt;p&gt;As far as I read in different resources available online, the availability of test kits is pretty low and hence tests are done only for the people who have symptoms.&lt;/p&gt;
+
+&lt;p&gt;The situation went on to be so pathetic that I had to seek help from the Kolkata police. I talked with the cops and explained the situation. They were pretty happy to know how I was maintaining self-isolation.&lt;/p&gt;
+
+&lt;p&gt;Kolkata Police has done a great job. They helped a lot to normalize the situation. The locals wanted me to at least visit a doctor.&lt;/p&gt;
+
+&lt;p&gt;The next day morning I had to go out to see a doctor.&lt;/p&gt;
+
+&lt;p&gt;Surprisingly none of the clinics and private hospitals were open. Just the Emergency department was open in some of the private hospitals where they denied to do a checkup. They asked me to go to MR Bangur Hospital or Beleghata ID (State Government operated Hospitals ).&lt;/p&gt;
+
+&lt;p&gt;I went to MR Bangur Hospital, but there was a huge queue and most of them had symptoms. I didn’t want to waste the doctor’s time who are engaged in treating the actual patients. I had a conversation with the Health Department of West Bengal, and they suggested me to visit the Free Clinic at the KMC Office. I went there and got the checkup done.&lt;/p&gt;
+
+&lt;p&gt;Local people got satisfied after seeing the prescription. But still, I don’t see any of my educated neighbors opening the windows. Let me tell you here, there is a distance of at least 100 meters between the houses.&lt;/p&gt;
+
+&lt;p&gt;What I learned from this made me happy:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;The local government has a plan ( may not be a full-proof one, at least they have a plan).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Police cooperated a lot.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;I met with the local counselor, and he assured me full protection in case of any further problems if I promise to keep myself self-isolated as per the doctor’s suggestion.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The Corona stigma is pathetic. I don’t know where we are going with this. This is just because of unawareness. This is a serious issue. Some people are not bothered, some people are panicking a lot. And these things should be addressed by the leaders.&lt;/p&gt;
+
+&lt;p&gt;Every day at 4 pm our State Chief Minister Mamata Banerjee is doing press conferences and letting us know about the current condition of the state. There are a lot of affected people but on the other hand, many who got affected is recovering. This kind of message helps people not to panic.&lt;/p&gt;
+
+&lt;p&gt;There are mishaps in different regions of West Bengal as well, I am not denying that. But at least I can see someone is trying hard to fight this and not to bring politics and religion in this pandemic situation.&lt;/p&gt;
+
+&lt;p&gt;From the PM speech today, I had a very high expectation.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;I expected that we will get an assurance to fight this pandemic.&lt;/li&gt;
+  &lt;li&gt;That the Central Government will tell how we can reach out to the poor especially the daily wage workers, and help them with food.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Something about utilizing the PM CARES fund.
+But nothing.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The virus doesn’t affect a person seeing his religion&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;How should we avoid social gatherings?&lt;/li&gt;
+  &lt;li&gt;How migrant workers can be assured with food and shelter so that they don’t need to desperately walk 100s of km, not get treated with pest control sprays.&lt;/li&gt;
+  &lt;li&gt;Strong action against people who have vandalized hospitals, or misbehaved with doctors and other health workers&lt;/li&gt;
+  &lt;li&gt;Status of how the nation is equipped with Mask, Sanitizers, gloves, and PPE (hazmat suits)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But what we got is a Task, a task to unite people.&lt;/p&gt;
+
+&lt;p&gt;We are talking about unity and people (especially the educated ones) won’t even turn up if you have any problem. Is this the unity we are talking about?&lt;/p&gt;
+
+&lt;p&gt;Will lighting up a candle from the terrace, bring people to help each other when someone needs help?
+I doubt…&lt;/p&gt;</content><author><name>Sumit Kar</name></author><category term="corona" /><summary type="html">“Light candles for 9 minutes at 9 PM on Sunday. This light will show that we are together in the battle against the virus,” the PM said today.</summary></entry><entry><title type="html">Books I loved Reading</title><link href="https://www.sumitkar.in/books/2020/01/04/books/" rel="alternate" type="text/html" title="Books I loved Reading" /><published>2020-01-04T15:33:23+00:00</published><updated>2020-01-04T15:33:23+00:00</updated><id>https://www.sumitkar.in/books/2020/01/04/books</id><content type="html" xml:base="https://www.sumitkar.in/books/2020/01/04/books/">&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.in/dp/1416507787/ref=cm_sw_r_as_gl_api_gl_i_2WN5B248CNP2P02GEJVN?linkCode=ml1&amp;amp;tag=timusrak-21&quot;&gt;The Cuckoo’s Egg: Tracking a Spy Through the Maze of Computer Espionage&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.in/dp/024134848X/ref=cm_sw_r_as_gl_api_gl_i_D5BZMAC3B06S3AZ9C86V?linkCode=ml1&amp;amp;tag=timusrak-21&quot;&gt;Measure What Matters: OKRs: The Simple Idea that Drives 10x Growth&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.in/dp/B001GSTOAM/?linkCode=ml1&amp;amp;tag=timusrak-21&quot;&gt;Clean Code: A Handbook of Agile Software Craftsmanship&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.in/dp/B08RMSHYGG/?linkCode=ml1&amp;amp;tag=timusrak-21&quot;&gt;Staff Engineer: Leadership beyond the management track&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.in/dp/9352139429/ref=cm_sw_r_as_gl_api_gl_i_C7KTRHDPMG13WTPKEG6E?linkCode=ml1&amp;amp;tag=timusrak-21&quot;&gt;Monolith to Microservices: Evolutionary Patterns to Transform Your Monolith - Grayscale Indian Edition&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.in/dp/9391043380/ref=cm_sw_r_as_gl_api_gl_i_29FD2XMWYDCC3EY060QE?linkCode=ml1&amp;amp;tag=timusrak-21&quot;&gt;Building Microservices: Designing Fine-Grained Systems, Second Edition (Grayscale Indian Edition)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.in/dp/0008393303/ref=cm_sw_r_as_gl_api_gl_i_PWP6GQJQABVD0E26Y2E7?linkCode=ml1&amp;amp;tag=timusrak-21&quot;&gt;Hit Refresh : A Memoir by Microsoft’s CEO&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.in/dp/0984782869/ref=cm_sw_r_as_gl_api_gl_i_FFBX1TKE7N8X97Q1C8PF?linkCode=ml1&amp;amp;tag=timusrak-21&quot;&gt;Cracking the Coding Interview (Indian Edition)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Sumit Kar</name></author><category term="books" /><summary type="html">The Cuckoo’s Egg: Tracking a Spy Through the Maze of Computer Espionage Measure What Matters: OKRs: The Simple Idea that Drives 10x Growth Clean Code: A Handbook of Agile Software Craftsmanship Staff Engineer: Leadership beyond the management track Monolith to Microservices: Evolutionary Patterns to Transform Your Monolith - Grayscale Indian Edition Building Microservices: Designing Fine-Grained Systems, Second Edition (Grayscale Indian Edition) Hit Refresh : A Memoir by Microsoft’s CEO Cracking the Coding Interview (Indian Edition)</summary></entry></feed>

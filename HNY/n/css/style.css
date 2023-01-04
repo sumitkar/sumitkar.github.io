@@ -1,0 +1,119 @@
+@import url(http://fonts.googleapis.com/css?family=Righteous);
+#year{
+  font-family: 'Righteous', cursive;
+  font-size:125px;
+  background:#1f004d;
+  width:100%;
+  height:400px;
+  border-radius:10px;
+  text-align:center;
+  animation:changeCol 5s infinite;
+}
+.title{color:#fff;opacity:1;animation:blink 0.2s infinite;}
+.hny{color:#fff;opacity:1;animation:blink 0.5s infinite;}
+.num{
+  display:inline-block;
+  position:relative;
+}
+.two{
+  color:#00ff5e;
+  animation: move 5s infinite;
+}
+.zero{
+  color:#ff52bf;
+  animation: move2 5s infinite;
+}
+.one{
+  color: #ffff52;
+  animation: move 5s infinite;
+}
+.four{
+  color: #d452ff;
+  animation: move2 5s infinite;
+}
+.hand{
+  transform-origin:0 0;
+  display:block;
+  border:3px solid black;
+  height:20px;
+  position:absolute;
+}
+.hand:after{
+  content:"";
+  background:#fff;
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  position:absolute;
+  left:-10px;
+  top:15px;
+}
+.handA{
+  transform-origin:0 0;
+  display:block;
+  border:3px solid black;
+  height:20px;
+  position:absolute;
+}
+.handA:after{
+  content:"";
+  background:#fff;
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  position:absolute;
+  left:-10px;
+  top:15px;
+}
+.two .hand{left:8px;top:80px; transform:rotate(45deg);transform-origin:0 0;animation: handMove 2s infinite;}
+.two .handA{left:60px;top:70px;transform:rotate(-135deg);animation: handMove2 2s infinite;transform-origin:0 0;}
+.zero .hand{transform:rotate(20deg);top:80px;left:8px;animation: handMove4 4s infinite;}
+.zero .handA{transform:rotate(340deg);top:80px;left:75px;animation: handMove3 4s infinite;}
+.one .hand{transform:rotate(45deg);top:60px;left:10px;animation: handMove 4s infinite;}
+.one .handA{transform:rotate(340deg);top:80px;left:35px;animation: handMove3 2s infinite;}
+.four .hand{top:95px;left:20px;animation: handMove5 2s infinite;}
+.four .handA{top:85px; left:70px;transform:rotate(-135deg);animation: handMove2 2s infinite;}
+
+@keyframes handMove{
+  0%,100%{transform:rotate(45deg);}
+  50%{transform:rotate(0deg);}
+  75%{transform:rotate(180deg);}
+}
+
+@keyframes handMove2{
+  0%,100%{transform:rotate(-135deg);}
+  50%{transform:rotate(-45deg);}
+}
+@keyframes handMove3{
+  0%,100%{transform:rotate(340deg);}
+  50%{transform:rotate(45deg);}
+}
+@keyframes handMove4{
+  0%,100%{transform:rotate(20deg);}
+  50%{transform:rotate(340deg);}
+}
+@keyframes handMove5{
+  0%,100%{transform:rotate(0deg);}
+  50%{transform:rotate(180deg);}
+}
+@keyframes move{
+  0%,100%{transform:translate(0,0);}
+  50%{transform:translate(20px,0);}
+  75%{transform:translate(0px,20px);}
+}
+@keyframes move2{
+  0%,100%{transform:translate(0,0);}
+  50%{transform:translate(-20px,0);}
+  75%{transform:translate(0px,-20px);}
+}
+@keyframes changeCol{
+  0%{background:#1f004d;}
+  25%{background:#c2c200;}
+  50%{background:#005207;}
+  50%{background:#4d002f;}
+  100%{background:#c2005a ;}
+}
+@keyframes blink{
+  0%,100%{opacity:1;}
+  50%{opacity:0;}
+}
