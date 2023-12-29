@@ -28,7 +28,9 @@ echo "Jekyll build done"
 
 # Now lets go to the generated folder by Jekyll
 # and perform everything else from there
+cp Ads.txt build/ads.txt
 cd build
+
 
 echo "☁️ Publishing website"
 
