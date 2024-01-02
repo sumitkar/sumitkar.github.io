@@ -179,5 +179,6 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - Ads.txt
 
 destination: ./build
