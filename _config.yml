@@ -20,6 +20,12 @@ author_bio:
 
 author_education_details:
               - college_logo: 
+                college_name: 
+                college_url: https://www.nmims.edu
+                college_degree: Information Technology and System Management
+                description: PGDM
+                visibility: true
+              - college_logo: 
                 college_name: Swami Vivekananda Institute of Science and Technology
                 college_url: https://svist.org
                 college_degree: Computer Science Engineer
